@@ -1,8 +1,5 @@
 let quadro = arr => {
-
-    let a = arr[0];
-    let b = arr[1];
-    let c = arr[2];
+    let [a, b, c] = arr;
     let x;
     let D;
     let x1;
