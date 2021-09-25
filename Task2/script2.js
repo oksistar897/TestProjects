@@ -2,7 +2,7 @@
 let getMostRepeat = (arr1, arr2) => {
         let arr = arr1.concat(arr2);
         let newObj = {}
-        var result = arr.reduce(function(acc, el) {
+        let result = arr.reduce(function(acc, el) {
             acc[el] = (acc[el] || 0) + 1;
             return acc;
         }, newObj);
