@@ -1,6 +1,8 @@
 
 //task 2
-
+setInterval(() => {
+    console.clear()
+}, 1000);
 function clock() {
     let date = new Date(),
         hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),
@@ -9,6 +11,3 @@ function clock() {
     console.log(hours + ':' + minutes + ':' + seconds);
 }
 setInterval(clock, 1000);
-setInterval(() => {
-    console.clear()
-}, 1020);
