@@ -18,15 +18,13 @@ function printNumbers(from, to) {
  
 // recursive setTimeout
  
-function printNumbers(from, to) {
-    let changesNumber = from;
-    let lastNumber = to;
-    let delay = 1000;
-    let timerNumber = setTimeout(function print() {
-        console.log(changesNumber);
-        if (changesNumber < lastNumber) {
-            timerNumber = setTimeout(print, delay);
-        }
-        changesNumber++
-    }, delay);
+let printNumbers = (from, to) => {
+  console.log(from)
+
+  if (from < to) {
+    setTimeout(printNumbers, 1000, from+1, to);
+    return
+  }
+
+  return
 }
